@@ -1,0 +1,27 @@
+{
+  "name": "kttnkndy",
+  "version": "1.0.0",
+  "description": "kttnkndy (pronounced cotton candy) is a fancy JS logging tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "styleFix": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbyjins/kttnkndy.git"
+  },
+  "keywords": [
+    "log",
+    "logger"
+  ],
+  "author": "skiilaa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbyjins/kttnkndy/issues"
+  },
+  "homepage": "https://github.com/bbyjins/kttnkndy#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
