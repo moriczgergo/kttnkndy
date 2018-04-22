@@ -1,6 +1,6 @@
 {
   "name": "kttnkndy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "kttnkndy (pronounced cotton candy) is a fancy JS logging tool.",
   "main": "index.js",
   "scripts": {

@@ -21,6 +21,37 @@ doSomething(); // Run a time-consuming function...
 myTimer.end(); // 16:55:42 - [myInstance] Ended timer "myTimer", took 60.663s.
 ```
 
+# Quick Start
+
+First, we'll need to initialize a kttn instance. You should do this for every service running on the same console output.
+
+```js
+var kttn = require('kttnkndy')('main'); // Initializes a kttn instance, logs "16:54:41 - [main] Initialized."
+```
+
+## Basic logging and errors
+
+Something you probably do in every project you build is logging. It's essential to debugging and making sure your project works.
+
+kttnkndy makes it easy to differentiate between logging messages from different services.
+
+```js
+kttn.log('Hello world!'); // Outputs: "16:54:41 - [main] Hello world!"
+kttn.error('Uh-oh... Something happened...'); // Outputs: "16:54:41 - [main] Uh-oh... Something happened..." on stderr
+```
+
+## Timers
+
+To measure your project's performance, timers are essential. They measure how much time it took to do something.
+
+In kttnkndy, it's easy to time things.
+
+```js
+var myTimer = kttn.timer('myTimer'); // Creates a timer instance, outputs: "16:54:42 - [myInstance] Started timer "myTimer"."
+doSomething();
+var ms = myTimer.end(); // Ends the timer, outputs: "16:55:42 - [myInstance] Ended timer "myTimer", took 60.663s.". Returns milliseconds.
+```
+
 # Documentation
 
 ## Functions
