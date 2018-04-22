@@ -1,5 +1,7 @@
 # kttnkndy [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![npm](https://img.shields.io/npm/dt/kttnkndy.svg)](https://www.npmjs.com/package/kttnkndy)
+
 ![kttnkndy logo](https://bbyjins.skiilaa.me/img/kttnkndy/logo/transparent_small.png)
+
 kttnkndy (pronounced cotton candy) is a logging tool that actually helps your work.
 
 # Features
@@ -39,11 +41,11 @@ var kttn = require('kttnkndy')('myInstance', {
 #### Parameters
 
  * instanceName - The name of the kttn instance. Appears in all log messages. (string)
- * options - A [KttnOptions](#KttnOptions) object.
+ * options - A [KttnOptions](#kttnoptions) object.
 
 #### Returns
 
-newKttnInstance returns a [KttnInstance](#KttnInstance).
+newKttnInstance returns a [KttnInstance](#kttninstance).
 
 ### kttnLog
 
@@ -63,7 +65,7 @@ kttn.log('Hello World!')
 
 kttnError is the function returned on `kttn.error`.
 
-This is [kttnLog](#kttnLog), but it logs the message to `stderr`.
+This is [kttnLog](#kttnlog), but it logs the message to `stderr`.
 
 ### kttnTimer
 
@@ -81,7 +83,7 @@ var timer = kttn.timer('myTimer');
 
 #### Returns
 
-kttnTimer returns a [KttnTimer](#KttnTimer).
+kttnTimer returns a [KttnTimer](#kttntimer-1).
 
 ### kttnEndTimer
 
@@ -121,10 +123,10 @@ kttnEndTimer returns a number, the milliseconds it took between the start of the
 #### Properties
 
  * name - The kttn instance's name. (string)
- * log - [kttnLog](#kttnLog) (function)
- * error - [kttnError](#kttnError) (function)
- * timer - [kttnTimer](#kttnTimer) (function)
- * timestamped - timestampedLog from [newKttnInstance](#newKttnInstance)'s [options](#KttnOptions). (bool)
+ * log - [kttnLog](#kttnlog) (function)
+ * error - [kttnError](#kttnerror) (function)
+ * timer - [kttnTimer](#kttntimer) (function)
+ * timestamped - timestampedLog from [newKttnInstance](#newkttninstance)'s [options](#kttnoptions). (bool)
 
 #### Example
 
@@ -144,9 +146,9 @@ kttnEndTimer returns a number, the milliseconds it took between the start of the
 
  * timerName - The name of the timer instance. (string)
  * startTime - The UNIX timestamp of the start time of the timer. (number)
- * end - [kttnEndTimer](#kttnEndTimer) (function)
- * log - [kttnLog](#kttnLog) (function)
- * timestamped - timestampedLog from [newKttnInstance](#newKttnInstance)'s [options](#KttnOptions). (bool)
+ * end - [kttnEndTimer](#kttnendtimer) (function)
+ * log - [kttnLog](#kttnlog) (function)
+ * timestamped - timestampedLog from [newKttnInstance](#newkttninstance)'s [options](#kttnoptions). (bool)
  * name - The name of the kttn instance. (string)
 
 #### Example
